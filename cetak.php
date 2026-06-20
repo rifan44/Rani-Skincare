@@ -11,7 +11,7 @@ if (!isset($_GET['id'])) {
 }
 
 $id = $_GET['id'];
-$query = mysqli_query($koneksi, "SELECT * FROM stok_barang WHERE id = '$id'");
+$query = mysqli_query($koneksi, "SELECT * FROM stok_barang_rifan_2430511018 WHERE id = '$id'");
 $data = mysqli_fetch_array($query);
 
 if (!$data) {
@@ -37,7 +37,6 @@ if (!$data) {
         .ttd-img { border: 1px dashed #ccc; border-radius: 4px; background: #fff; width: 150px; height: 60px; }
         .btn-print { background: #ff66a3; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 15px; }
         
-        /* Hilangkan tombol cetak saat dicetak ke PDF */
         @media print {
             .btn-print { display: none; }
             body { margin: 0; }
@@ -102,7 +101,6 @@ if (!$data) {
     </div>
 
     <script>
-        // Otomatis membuka jendela cetak/simpan PDF saat halaman selesai dimuat
         window.onload = function() {
             window.print();
         }

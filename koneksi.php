@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$user = "root"; 
-$pass = "";     
-$db   = "inventaris_skincare";
+$user = "ifummiid_kelasa"; 
+$pass = "pemweb_db_a";     
+$db   = "ifummiid_kelasa";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 
