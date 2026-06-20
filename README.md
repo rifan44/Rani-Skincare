@@ -2,7 +2,7 @@
 
 Aplikasi berbasis web berkonsep *Modern Dashboard* untuk memantau progres transaksi masuk dan keluar stok barang kosmetik dan skincare secara *real-time*. Dibuat khusus untuk memenuhi kriteria evaluasi tugas praktikum pemrograman web berbasis CRUD.
 
-## 🌟 Pembaruan & Fitur Utama (Versi Terbaru)
+## 🌟 Pembaruan & Fitur Utama
 
 1. **Logika Master Data & Transaksi (Relasional):** Sistem kini dipisah menjadi dua entitas, yaitu "Master Barang" (sebagai wadah stok murni) dan "Riwayat Transaksi" (sebagai log arus barang masuk/keluar).
 2. **Sinkronisasi Stok Real-Time (Otomatis):** Fitur kalkulasi cerdas di *back-end*. Ketika ada pencatatan, pengeditan, atau penghapusan pada Riwayat Transaksi, jumlah stok pada Master Barang akan otomatis terhitung ulang dan ter-*rollback* secara presisi.
